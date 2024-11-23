@@ -1,1 +1,29 @@
-GET http://localhost:5245
+GET http://localhost:5245/games
+
+###
+GET http://localhost:5245/games/6
+
+###
+POST http://localhost:5245/games
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Kids and family",
+    "price": 19.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5245/games/4
+Content-Type: application/json
+
+{
+    "name": "Minecraft",
+    "genre": "Adventure",
+    "price": 9.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+DELETE http://localhost:5245/games/2 
