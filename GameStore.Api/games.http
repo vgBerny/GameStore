@@ -1,29 +1,29 @@
 GET http://localhost:5245/games
 
 ###
-GET http://localhost:5245/games/6
+GET http://localhost:5245/games/1
 
 ###
 POST http://localhost:5245/games
 Content-Type: application/json
 
 {
-    "name": "Minecraft",
-    "genre": "Kids and family",
-    "price": 19.99,
-    "releaseDate": "2011-11-18"
+    "name": "Final Fantasy XIV",
+    "genreid": 3,
+    "price": 49.99,
+    "releaseDate": "2010-09-30"
 }
 
 ###
-PUT http://localhost:5245/games/4
+PUT http://localhost:5245/games/1
 Content-Type: application/json
 
 {
-    "name": "Minecraft",
-    "genre": "Adventure",
+    "name": "Minecraft II",
+    "genreId": 2,
     "price": 9.99,
-    "releaseDate": "2011-11-18"
+    "releaseDate": "2011-11-11"
 }
 
 ###
-DELETE http://localhost:5245/games/2 
+DELETE http://localhost:5245/games/3 
