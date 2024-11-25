@@ -10,7 +10,9 @@ var app = builder.Build();
 
 app.MapGamesEndpoints();
 
+app.MapGenresEndponints();
+
 // metodo para aplicar migraciones al correr la app 
-app.MigrateDb();
+await app.MigrateDbAsync();
 
 app.Run();
